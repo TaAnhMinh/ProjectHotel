@@ -1,0 +1,212 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplication.GuestBookingFragment2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/csLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:gravity="center"
+            android:text="Booking"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/viewRef"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="120dp"
+            android:background="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/tvBook" />
+
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Date Start: "
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/viewRef"
+            tools:ignore="MissingConstraints" />
+
+        <Spinner
+            android:id="@+id/monthBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintLeft_toRightOf="@id/dateText"
+            app:layout_constraintTop_toBottomOf="@id/viewRef" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MM"
+            app:layout_constraintBottom_toTopOf="@id/monthBook"
+            app:layout_constraintLeft_toRightOf="@id/monthBook"
+            app:layout_constraintRight_toLeftOf="@id/monthBook" />
+
+        <TextView
+            android:id="@+id/slash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="/"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@id/monthBook"
+            app:layout_constraintTop_toBottomOf="@id/viewRef" />
+
+        <Spinner
+            android:id="@+id/dateBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintLeft_toRightOf="@id/slash"
+            app:layout_constraintTop_toBottomOf="@id/viewRef" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DD"
+            app:layout_constraintBottom_toTopOf="@id/dateBook"
+            app:layout_constraintLeft_toRightOf="@id/dateBook"
+            app:layout_constraintRight_toLeftOf="@id/dateBook" />
+
+        <TextView
+            android:id="@+id/endText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Date End: "
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/dateText"
+            tools:ignore="MissingConstraints" />
+
+        <Spinner
+            android:id="@+id/monthEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintLeft_toRightOf="@id/endText"
+            app:layout_constraintTop_toBottomOf="@id/dateText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MM"
+            app:layout_constraintBottom_toTopOf="@id/monthEnd"
+            app:layout_constraintLeft_toRightOf="@id/monthEnd"
+            app:layout_constraintRight_toLeftOf="@id/monthEnd" />
+
+        <TextView
+            android:id="@+id/slashEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="/"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@id/monthEnd"
+            app:layout_constraintTop_toBottomOf="@id/dateText" />
+
+        <Spinner
+            android:id="@+id/dateEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:layout_constraintLeft_toRightOf="@id/slashEnd"
+            app:layout_constraintTop_toBottomOf="@id/dateText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DD"
+            app:layout_constraintBottom_toTopOf="@id/dateEnd"
+            app:layout_constraintLeft_toRightOf="@id/dateEnd"
+            app:layout_constraintRight_toLeftOf="@id/dateEnd" />
+
+        <TextView
+            android:id="@+id/peopleNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of People: "
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/dateEnd"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/noPeople"
+            android:layout_width="50dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="@string/number"
+            android:inputType="number"
+            app:layout_constraintLeft_toRightOf="@id/peopleNo"
+            app:layout_constraintTop_toBottomOf="@id/dateEnd" />
+
+        <TextView
+            android:id="@+id/smokingGuest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smoking: "
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/noPeople"
+            tools:ignore="MissingConstraints" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/smokingTorFG"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintLeft_toRightOf="@id/smokingGuest"
+            app:layout_constraintTop_toBottomOf="@id/noPeople" />
+
+        <Button
+            android:id="@+id/bookGuest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/smokingGuest"
+            app:layout_constraintRight_toLeftOf="@id/tvBook"
+            app:layout_constraintLeft_toRightOf="@id/tvBook" />
+
+        <Button
+            android:id="@+id/cancelBooking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            app:layout_constraintTop_toBottomOf="@id/bookGuest"
+            app:layout_constraintRight_toLeftOf="@id/tvBook"
+            app:layout_constraintLeft_toRightOf="@id/tvBook" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

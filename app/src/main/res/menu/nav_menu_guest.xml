@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeScreenGuest"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/menuProfileGuest"
+        android:icon="@drawable/ic_baseline_face_24"
+        android:title="@string/Profile" />
+
+    <item
+        android:id="@+id/notificationGuest"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        android:title="@string/notification" />
+
+    <item
+        android:id="@+id/bookingGuest"
+        android:icon="@drawable/ic_baseline_library_books_24"
+        android:title="@string/booking" />
+
+    <item
+        android:id="@+id/inboxGuest"
+        android:icon="@drawable/inbox"
+        android:title="@string/inbox" />
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/settingGuest"
+                android:icon="@drawable/setting"
+                android:title="@string/setting" />
+
+            <item
+                android:id="@+id/helpGuest"
+                android:icon="@drawable/help"
+                android:title="@string/detail" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/signoutNowGuest"
+        android:icon="@drawable/ic_baseline_power_settings_new_24"
+        android:title="Sign out"/>
+
+</menu>

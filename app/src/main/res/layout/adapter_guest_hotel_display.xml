@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/guestHotelSearch"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="HotelName"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:text="Address: "/>
+
+        <TextView
+            android:id="@+id/addressShowGuest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="addressShow"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:text="City: "/>
+
+        <TextView
+            android:id="@+id/cityShowGuest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="addressShow"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Country: "/>
+
+        <TextView
+            android:id="@+id/countryShowGuest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="countryShow"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimary"
+        android:text="Open: "/>
+
+        <TextView
+            android:id="@+id/openHotelGuest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="openTime"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Close: "/>
+
+        <TextView
+            android:id="@+id/closeHotelGuest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="closeTime"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+</LinearLayout>

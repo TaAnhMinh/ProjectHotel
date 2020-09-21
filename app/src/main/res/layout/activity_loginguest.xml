@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Space
+        android:layout_height="120dp"
+        android:layout_width="match_parent"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:textSize="24sp"
+        android:text="Login" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/username"
+        android:selectAllOnFocus="true"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="24dp"
+        />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/password"
+        android:selectAllOnFocus="true"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="24dp"
+        android:imeOptions="actionDone"
+        />
+    <Space
+        android:layout_height="78dp"
+        android:layout_width="match_parent"
+        />
+
+    <Button
+        android:id="@+id/signIn"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:onClick="checkLogin"
+        android:text="Login" />
+
+    <Space
+        android:layout_height="20dp"
+        android:layout_width="match_parent"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="#2481AC"
+        android:textAllCaps="false"
+        android:text="Don't have an account? Register to become a Guest"
+        android:id="@+id/register"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        />
+
+</LinearLayout>

@@ -1,0 +1,312 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.myapplication.HostProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/profilePic"
+            android:layout_width="127dp"
+            android:layout_height="121dp"
+            android:layout_marginHorizontal="100dp"
+            android:src="@drawable/profile"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toTopOf="@id/viewSupporter2"
+            app:layout_constraintLeft_toRightOf="@id/viewSupporter2"
+            app:layout_constraintRight_toLeftOf="@id/viewSupporter2"/>
+
+        <View
+            android:id="@+id/viewSupporter"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toBottomOf="@id/profilePic"
+            app:layout_constraintEnd_toEndOf="@id/profilePic"
+            app:layout_constraintStart_toStartOf="@id/profilePic"
+            app:layout_constraintTop_toTopOf="@id/profilePic"/>
+
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#E21F83B1"
+            android:text="TextView"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/profilePic"
+            app:layout_constraintStart_toStartOf="@id/profilePic"
+            app:layout_constraintEnd_toEndOf="@id/profilePic"
+             />
+
+        <View
+            android:id="@+id/line5"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="70dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@id/profileName"/>
+
+        <View
+            android:id="@+id/viewSupporter2"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toBottomOf="@id/line5"
+            app:layout_constraintEnd_toEndOf="@id/line5"
+            app:layout_constraintStart_toStartOf="@id/line5"
+            app:layout_constraintTop_toTopOf="@id/line5"/>
+        
+        <Space
+            android:id="@+id/space1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:layout_constraintTop_toBottomOf="@id/profileName"/>
+
+        <TextView
+            android:id="@+id/Age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age: "
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/space1"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="40dp" />
+
+        <TextView
+            android:id="@+id/ageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AgeTextView"
+            app:layout_constraintLeft_toRightOf="@id/Age"
+            app:layout_constraintTop_toBottomOf="@id/space1"/>
+
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            app:layout_constraintTop_toBottomOf="@id/Age"/>
+
+        <TextView
+            android:id="@+id/addressProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address: "
+            app:layout_constraintTop_toBottomOf="@id/space2"
+            tools:layout_editor_absoluteX="40dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/addressHostShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintLeft_toRightOf="@id/addressProfile"
+            app:layout_constraintTop_toBottomOf="@id/space2"/>
+
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            app:layout_constraintTop_toBottomOf="@id/addressProfile"/>
+
+        <TextView
+            android:id="@+id/emailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: "
+            app:layout_constraintTop_toBottomOf="@id/space3"
+            tools:layout_editor_absoluteX="40dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/emailShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintTop_toBottomOf="@id/space3"
+            app:layout_constraintLeft_toRightOf="@id/emailAddress"/>
+
+
+        <TextView
+            android:id="@+id/HotelList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hotel :"
+            android:textColor="#E21F83B1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            app:layout_constraintTop_toBottomOf="@id/emailShow"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="9dp" />
+
+        <View
+            android:id="@+id/underlineHotel"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginEnd="300dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@id/HotelList"/>
+
+        <Space
+            android:id="@+id/belowHotel"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            app:layout_constraintTop_toBottomOf="@id/underlineHotel"/>
+
+        <TextView
+            android:id="@+id/hotelN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            app:layout_constraintTop_toBottomOf="@id/belowHotel"
+            tools:layout_editor_absoluteX="40dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textViewHotelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintLeft_toRightOf="@id/hotelN"
+            app:layout_constraintTop_toBottomOf="@id/belowHotel"/>
+
+        <Space
+            android:id="@+id/belowHotelName"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            app:layout_constraintTop_toBottomOf="@id/hotelN"/>
+
+
+        <TextView
+            android:id="@+id/addressHotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hotel Address: "
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/belowHotelName"
+            tools:layout_editor_absoluteX="40dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/addressHotelShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/belowHotelName"
+            app:layout_constraintLeft_toRightOf="@id/addressHotel"
+            android:text="TextView "
+            android:textSize="15sp"
+            tools:ignore="MissingConstraints" />
+
+        <Space
+            android:id="@+id/space5"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            app:layout_constraintTop_toBottomOf="@id/addressHotel"/>
+
+        <TextView
+            android:id="@+id/phoneHotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/space5"
+            android:text="Phonenumber: "
+            android:textSize="15sp"
+            tools:layout_editor_absoluteX="40dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/phoneHotelShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintLeft_toRightOf="@id/phoneHotel"
+            app:layout_constraintTop_toBottomOf="@id/space5"/>
+
+        <Space
+            android:id="@+id/space6"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            app:layout_constraintTop_toBottomOf="@id/phoneHotel"/>
+
+        <TextView
+        android:id="@+id/openingTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/space6"
+        android:text="Opening Time: "
+        android:textSize="15sp"
+            tools:layout_editor_absoluteX="40dp"
+        tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/openingTimeShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView1 "
+            app:layout_constraintLeft_toRightOf="@id/openingTime"
+            app:layout_constraintTop_toBottomOf="@id/space6"/>
+
+
+        <TextView
+            android:id="@+id/timeSep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ~ "
+            app:layout_constraintLeft_toRightOf="@id/openingTimeShow"
+            app:layout_constraintTop_toBottomOf="@id/space6"/>
+
+        <TextView
+            android:id="@+id/closingTimeShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView2 "
+            app:layout_constraintLeft_toRightOf="@id/timeSep"
+            app:layout_constraintTop_toBottomOf="@id/space6"/>
+
+        <Space
+            android:id="@+id/space7"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            app:layout_constraintTop_toBottomOf="@id/openingTime"/>
+
+        <TextView
+            android:id="@+id/checkinTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/space7"
+            android:text="Check-in Time: "
+            android:textSize="15sp"
+            tools:layout_editor_absoluteX="40dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/checkinTimeShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check "
+            app:layout_constraintLeft_toRightOf="@id/checkinTime"
+            app:layout_constraintTop_toBottomOf="@id/space7"/>
+
+        <LinearLayout
+            android:layout_width="414dp"
+            android:layout_height="145dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@id/profilePic"
+            app:layout_constraintStart_toStartOf="@id/profilePic"
+            app:layout_constraintTop_toBottomOf="@id/checkinTimeShow">
+
+            <Button
+                android:id="@+id/hostEditHotel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Hotel" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
